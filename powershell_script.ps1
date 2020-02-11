@@ -2,6 +2,10 @@
 
 [Int32]$num2 = Read-Host -Prompt "Ponga el segundo número (entre el 1 y 5)"
 
+Write-Host "La sucesion aritmetico geometrica para los siguientes 6 elementos es;"
+
+Write-Host -NoNewline "$num1, $num2"
+
 if($num1 -gt $num2) {
     $z = $num1
     $num1 = $num2
@@ -18,4 +22,4 @@ for($i=1;$i-lt 6;$i++) {
     $sum += $n
 }
 
-Write-Host $sum
+Write-Host " y su suma total vale $sum" 
