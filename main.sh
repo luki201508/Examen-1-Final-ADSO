@@ -18,3 +18,14 @@ let group
 let home_directory
 let uid
 
+exit_program() {
+	rm -f /tmp/user-management.tmp.*
+	clear
+	case $1 in
+		1) echo "Program terminated";;
+		255) echo "Program aborted"
+			exit 1;;
+	esac
+	exit
+}
+
